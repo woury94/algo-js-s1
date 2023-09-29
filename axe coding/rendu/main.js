@@ -14,10 +14,30 @@ class character{
         while (feuxrouges<30 || this.hp>=0){
             feuxrouges+=1
             let radio = "Anissa - Wejdene"
-            if (radio == musique[2]){
+
+    
+            var rand = Math.floor(Math.random()*musique.length);
+            var rValue = musique[rand];
+            console.log(rValue)
+
+            if (radio == musique){
+                
+                
+                
+                
+               
+               
+               
+               
+                this.hp -= 1 
+                changementdetaxi += 1
+            console.log("changement de taxi")
         
             }
-              break
+              if (this.hp === 0){
+                console.log("y'a plus de hp")
+                break  
+              }
         }
     }
 }
